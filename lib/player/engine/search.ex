@@ -22,7 +22,7 @@ defmodule Player.Engine.Search do
       Keyword.get(
         options,
         :max_concurrency,
-        Application.get_env(:player, :max_concurrency, 64)
+        Application.get_env(:player, :max_concurrency, 12)
       )
 
     if is_integer(max_concurrency) and max_concurrency > 0 do
